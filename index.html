@@ -1,351 +1,469 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title data-i18n="meta.title">Alexandre Bruno — Développeur Fullstack</title>
-  <meta name="description" content="Portfolio d'Alexandre Bruno" data-i18n-attr="content:meta.description">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-i18n="meta.title">
+      Alexandre Bruno — Développeur Fullstack
+    </title>
+    <meta
+      name="description"
+      content="Portfolio d'Alexandre Bruno"
+      data-i18n-attr="content:meta.description"
+    />
 
-  <link rel="icon" href="assets/img/Cenzuoyeah.png">
+    <link rel="icon" href="assets/img/Cenzuoyeah.png" />
 
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <!-- ======= Header ======= -->
+    <header id="header">
+      <div class="container nav-inner">
+        <a href="#hero" class="logo"
+          >alexandre-bruno<span class="dot">.dev</span></a
+        >
 
-  <!-- ======= Header ======= -->
-  <header id="header">
-    <div class="container nav-inner">
-      <a href="#hero" class="logo">alexandre-bruno<span class="dot">.dev</span></a>
+        <nav class="nav-menu">
+          <ul>
+            <li><a href="#about" data-i18n="nav.about">À propos</a></li>
+            <li>
+              <a href="#experience" data-i18n="nav.experience">Expérience</a>
+            </li>
+            <li>
+              <a href="#education" data-i18n="nav.education">Formation</a>
+            </li>
+            <li><a href="#skills" data-i18n="nav.skills">Compétences</a></li>
+            <li><a href="#projects" data-i18n="nav.projects">Projets</a></li>
+            <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+          </ul>
+        </nav>
 
-      <nav class="nav-menu">
-        <ul>
-          <li><a href="#about" data-i18n="nav.about">À propos</a></li>
-          <li><a href="#experience" data-i18n="nav.experience">Expérience</a></li>
-          <li><a href="#education" data-i18n="nav.education">Formation</a></li>
-          <li><a href="#skills" data-i18n="nav.skills">Compétences</a></li>
-          <li><a href="#projects" data-i18n="nav.projects">Projets</a></li>
-          <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
-        </ul>
-      </nav>
-
-      <div class="nav-tools">
-        <div class="lang-toggle">
-          <button type="button" data-lang="fr">FR</button>
-          <button type="button" data-lang="en">EN</button>
-        </div>
-        <button type="button" class="nav-toggle-btn" aria-label="Menu"><span></span></button>
-      </div>
-    </div>
-  </header>
-
-  <!-- ======= Hero ======= -->
-  <section id="hero">
-    <div class="container hero-grid">
-      <div>
-        <div class="hero-kicker">&gt; <span data-i18n="hero.kicker">portfolio.dev — session active</span><span class="cursor">_</span></div>
-        <h1><span data-i18n="hero.title.pre">Salut, je suis </span><span class="accent" data-i18n="hero.title.name">Alexandre</span></h1>
-        <p class="hero-lead" data-i18n="hero.lead">Développeur fullstack de 25 ans, actuellement en Master Ingénieur Web à Ynov Campus.</p>
-        <div class="hero-meta">
-          <span data-i18n="hero.meta.age">25 ans</span>
-          <span class="sep"></span>
-          <span data-i18n="hero.meta.location">Aix-en-Provence, France</span>
-          <span class="sep"></span>
-          <span data-i18n="hero.meta.status">Ouvert aux opportunités</span>
-        </div>
-        <div class="hero-actions">
-          <a href="#projects" class="btn btn-primary" data-i18n="hero.cta.projects">Voir mes projets</a>
-          <a href="#contact" class="btn btn-ghost" data-i18n="hero.cta.contact">Me contacter</a>
-        </div>
-      </div>
-
-      <div class="terminal reveal">
-        <div class="terminal-bar">
-          <span></span><span></span><span></span>
-          <div class="t-title" data-i18n="hero.term.title">~/alexandre-bruno — zsh</div>
-        </div>
-        <div class="terminal-body">
-          <div class="line"><span class="prompt">$</span> <span data-i18n="hero.term.whoami">whoami</span></div>
-          <div class="line out" data-term-whoami-out>Alexandre Bruno</div>
-          <div class="line"><span class="prompt">$</span> <span data-i18n="hero.term.roles_cmd">cat roles.log</span></div>
-          <div class="line out">&gt; <span class="type-target"></span><span class="caret"></span></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <main id="main">
-
-    <!-- ======= About ======= -->
-    <section id="about" class="section">
-      <div class="container">
-        <div class="section-head reveal">
-          <div class="eyebrow" data-i18n="about.eyebrow">about</div>
-          <h2 data-i18n="about.title">À propos</h2>
-        </div>
-
-        <div class="about-grid">
-          <div class="about-photo reveal">
-            <img src="assets/img/profile-img.png" alt="Alexandre Bruno">
+        <div class="nav-tools">
+          <div class="lang-toggle">
+            <button type="button" data-lang="fr">FR</button>
+            <button type="button" data-lang="en">EN</button>
           </div>
-          <div class="about-text reveal">
-            <p data-i18n-html="about.p1">…</p>
-            <p data-i18n-html="about.p2">…</p>
-            <p data-i18n-html="about.p3">…</p>
-            <p data-i18n-html="about.p4">…</p>
+          <button type="button" class="nav-toggle-btn" aria-label="Menu">
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </header>
 
-            <dl class="about-facts">
-              <div>
-                <dt data-i18n="about.fact.birth">Date de naissance</dt>
-                <dd data-i18n="about.fact.birth.value">29 décembre 2001</dd>
-              </div>
-              <div>
-                <dt data-i18n="about.fact.location">Ville</dt>
-                <dd data-i18n="about.fact.location.value">Aix-en-Provence, France</dd>
-              </div>
-              <div>
-                <dt data-i18n="about.fact.degree">Diplôme en cours</dt>
-                <dd data-i18n="about.fact.degree.value">Master Ingénieur Web</dd>
-              </div>
-              <div>
-                <dt data-i18n="about.fact.email">Email</dt>
-                <dd data-i18n="about.fact.email.value">alexandre.bruno01@orange.fr</dd>
-              </div>
-            </dl>
+    <!-- ======= Hero ======= -->
+    <section id="hero">
+      <div class="container hero-grid">
+        <div>
+          <div class="hero-kicker">
+            &gt;
+            <span data-i18n="hero.kicker">portfolio.dev — session active</span
+            ><span class="cursor">_</span>
+          </div>
+          <h1>
+            <span data-i18n="hero.title.pre">Salut, je suis </span
+            ><span class="accent" data-i18n="hero.title.name">Alexandre</span>
+          </h1>
+          <p class="hero-lead" data-i18n="hero.lead">
+            Développeur fullstack de 25 ans, diplômé d'un Master Ingénieur Web à
+            Ynov Campus.
+          </p>
+          <div class="hero-meta">
+            <span data-i18n="hero.meta.age">25 ans</span>
+            <span class="sep"></span>
+            <span data-i18n="hero.meta.location">Aix-en-Provence, France</span>
+            <span class="sep"></span>
+            <span data-i18n="hero.meta.status">Ouvert aux opportunités</span>
+          </div>
+          <div class="hero-actions">
+            <a
+              href="#projects"
+              class="btn btn-primary"
+              data-i18n="hero.cta.projects"
+              >Voir mes projets</a
+            >
+            <a
+              href="#contact"
+              class="btn btn-ghost"
+              data-i18n="hero.cta.contact"
+              >Me contacter</a
+            >
           </div>
         </div>
-      </div>
-    </section>
 
-    <!-- ======= Experience & Education ======= -->
-    <section id="experience" class="section">
-      <div class="container">
-        <div class="two-col">
-          <div>
-            <div class="section-head reveal">
-              <div class="eyebrow" data-i18n="experience.eyebrow">experience</div>
-              <h2 data-i18n="experience.title">Expérience professionnelle</h2>
-              <p data-i18n="experience.subtitle">Trois postes, trois façons différentes d'apprendre le métier.</p>
-            </div>
-
-            <div class="timeline">
-              <div class="timeline-item reveal">
-                <span class="timeline-date" data-i18n="exp1.date">Sept. 2024 — Déc. 2025</span>
-                <h3 data-i18n="exp1.role">Software Engineer</h3>
-                <span class="timeline-org" data-i18n="exp1.org">Capgemini</span>
-                <p data-i18n="exp1.desc">…</p>
-              </div>
-              <div class="timeline-item is-past reveal">
-                <span class="timeline-date" data-i18n="exp2.date">Oct. 2022 — Sept. 2023</span>
-                <h3 data-i18n="exp2.role">Développeur Fullstack Web</h3>
-                <span class="timeline-org" data-i18n="exp2.org">AMX One Solution</span>
-                <p data-i18n="exp2.desc">…</p>
-              </div>
-              <div class="timeline-item is-past reveal">
-                <span class="timeline-date" data-i18n="exp3.date">Juil. 2022 — Août 2022</span>
-                <h3 data-i18n="exp3.role">Stagiaire Webmaster</h3>
-                <span class="timeline-org" data-i18n="exp3.org">Abyxo</span>
-                <p data-i18n="exp3.desc">…</p>
-              </div>
+        <div class="terminal reveal">
+          <div class="terminal-bar">
+            <span></span><span></span><span></span>
+            <div class="t-title" data-i18n="hero.term.title">
+              ~/alexandre-bruno — zsh
             </div>
           </div>
-
-          <div id="education">
-            <div class="section-head reveal">
-              <div class="eyebrow" data-i18n="education.eyebrow">education</div>
-              <h2 data-i18n="education.title">Formation</h2>
+          <div class="terminal-body">
+            <div class="line">
+              <span class="prompt">$</span>
+              <span data-i18n="hero.term.whoami">whoami</span>
             </div>
-
-            <div class="timeline">
-              <div class="timeline-item reveal">
-                <span class="timeline-date" data-i18n="edu1.date">Depuis sept. 2025</span>
-                <h3 data-i18n="edu1.role">Master Ingénieur Web</h3>
-                <span class="timeline-org" data-i18n="edu1.org">Ynov Campus</span>
-                <p data-i18n="edu1.desc">…</p>
-              </div>
-              <div class="timeline-item is-past reveal">
-                <span class="timeline-date" data-i18n="edu2.date">2020 — 2023</span>
-                <h3 data-i18n="edu2.role">Bachelor Informatique</h3>
-                <span class="timeline-org" data-i18n="edu2.org">Ynov Aix Campus</span>
-                <p data-i18n="edu2.desc">…</p>
-              </div>
+            <div class="line out" data-term-whoami-out>Alexandre Bruno</div>
+            <div class="line">
+              <span class="prompt">$</span>
+              <span data-i18n="hero.term.roles_cmd">cat roles.log</span>
+            </div>
+            <div class="line out">
+              &gt; <span class="type-target"></span><span class="caret"></span>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ======= Skills ======= -->
-    <section id="skills" class="section">
-      <div class="container">
-        <div class="section-head reveal">
-          <div class="eyebrow" data-i18n="skills.eyebrow">skills</div>
-          <h2 data-i18n="skills.title">Compétences</h2>
-          <p data-i18n="skills.subtitle">Le résultat de plusieurs années de pratique.</p>
-        </div>
+    <main id="main">
+      <!-- ======= About ======= -->
+      <section id="about" class="section">
+        <div class="container">
+          <div class="section-head reveal">
+            <div class="eyebrow" data-i18n="about.eyebrow">about</div>
+            <h2 data-i18n="about.title">À propos</h2>
+          </div>
 
-        <div class="skills-grid">
-          <div class="skill-card reveal">
-            <h3 data-i18n="skills.languages">Langages</h3>
-            <div class="chip-row">
-              <span class="chip">JavaScript</span>
-              <span class="chip">TypeScript</span>
-              <span class="chip">Python</span>
-              <span class="chip">Java</span>
-              <span class="chip">C#</span>
-              <span class="chip">PHP</span>
-              <span class="chip">Kotlin</span>
-              <span class="chip">C++</span>
-              <span class="chip">Golang</span>
+          <div class="about-grid">
+            <div class="about-photo reveal">
+              <img src="assets/img/profile-img.png" alt="Alexandre Bruno" />
             </div>
-          </div>
-          <div class="skill-card reveal">
-            <h3 data-i18n="skills.frameworks">Frameworks &amp; outils</h3>
-            <div class="chip-row">
-              <span class="chip">Angular</span>
-              <span class="chip">Symfony</span>
-              <span class="chip">Android Studio</span>
-              <span class="chip">Git</span>
-              <span class="chip">HTML / CSS</span>
-            </div>
-          </div>
-          <div class="skill-card reveal">
-            <h3 data-i18n="skills.data">Données &amp; systèmes</h3>
-            <div class="chip-row">
-              <span class="chip">MySQL</span>
-              <span class="chip">Administration BDD</span>
-              <span class="chip">API tierces</span>
-            </div>
-          </div>
-          <div class="skill-card reveal">
-            <h3 data-i18n="skills.other">Autres</h3>
-            <div class="chip-row">
-              <span class="chip">DevOps</span>
-              <span class="chip">Gestion de projet</span>
-              <span class="chip">Anglais</span>
+            <div class="about-text reveal">
+              <p data-i18n-html="about.p1">…</p>
+              <p data-i18n-html="about.p2">…</p>
+              <p data-i18n-html="about.p3">…</p>
+              <p data-i18n-html="about.p4">…</p>
+
+              <dl class="about-facts">
+                <div>
+                  <dt data-i18n="about.fact.birth">Âge</dt>
+                  <dd data-i18n="about.fact.birth.value">25 ans</dd>
+                </div>
+                <div>
+                  <dt data-i18n="about.fact.location">Ville</dt>
+                  <dd data-i18n="about.fact.location.value">
+                    Aix-en-Provence, France
+                  </dd>
+                </div>
+                <div>
+                  <dt data-i18n="about.fact.degree">Diplôme</dt>
+                  <dd data-i18n="about.fact.degree.value">
+                    Master Ingénieur Web
+                  </dd>
+                </div>
+                <div>
+                  <dt data-i18n="about.fact.email">Email</dt>
+                  <dd data-i18n="about.fact.email.value">
+                    alexandre.bruno01@orange.fr
+                  </dd>
+                </div>
+              </dl>
             </div>
           </div>
         </div>
+      </section>
 
-        <div class="callout reveal">
-          <div>
-            <span class="tag" data-i18n="skills.callout.tag">En pratique</span>
-            <p data-i18n="skills.callout.text">…</p>
+      <!-- ======= Experience & Education ======= -->
+      <section id="experience" class="section">
+        <div class="container">
+          <div class="two-col">
+            <div>
+              <div class="section-head reveal">
+                <div class="eyebrow" data-i18n="experience.eyebrow">
+                  experience
+                </div>
+                <h2 data-i18n="experience.title">Expérience professionnelle</h2>
+                <p data-i18n="experience.subtitle">
+                  Trois postes, trois façons différentes d'apprendre le métier.
+                </p>
+              </div>
+
+              <div class="timeline">
+                <div class="timeline-item reveal">
+                  <span class="timeline-date" data-i18n="exp1.date"
+                    >Sept. 2024 — Déc. 2025</span
+                  >
+                  <h3 data-i18n="exp1.role">Software Engineer</h3>
+                  <span class="timeline-org" data-i18n="exp1.org"
+                    >Capgemini</span
+                  >
+                  <p data-i18n="exp1.desc">…</p>
+                </div>
+                <div class="timeline-item is-past reveal">
+                  <span class="timeline-date" data-i18n="exp2.date"
+                    >Oct. 2022 — Sept. 2023</span
+                  >
+                  <h3 data-i18n="exp2.role">Développeur Fullstack Web</h3>
+                  <span class="timeline-org" data-i18n="exp2.org"
+                    >AMX One Solution</span
+                  >
+                  <p data-i18n="exp2.desc">…</p>
+                </div>
+                <div class="timeline-item is-past reveal">
+                  <span class="timeline-date" data-i18n="exp3.date"
+                    >Juil. 2022 — Août 2022</span
+                  >
+                  <h3 data-i18n="exp3.role">Stagiaire Webmaster</h3>
+                  <span class="timeline-org" data-i18n="exp3.org">Abyxo</span>
+                  <p data-i18n="exp3.desc">…</p>
+                </div>
+              </div>
+            </div>
+
+            <div id="education">
+              <div class="section-head reveal">
+                <div class="eyebrow" data-i18n="education.eyebrow">
+                  education
+                </div>
+                <h2 data-i18n="education.title">Formation</h2>
+              </div>
+
+              <div class="timeline">
+                <div class="timeline-item reveal">
+                  <span class="timeline-date" data-i18n="edu1.date"
+                    >Sept. 2025</span
+                  >
+                  <h3 data-i18n="edu1.role">Master Ingénieur Web</h3>
+                  <span class="timeline-org" data-i18n="edu1.org"
+                    >Ynov Campus</span
+                  >
+                  <p data-i18n="edu1.desc">…</p>
+                </div>
+                <div class="timeline-item is-past reveal">
+                  <span class="timeline-date" data-i18n="edu2.date"
+                    >2020 — 2023</span
+                  >
+                  <h3 data-i18n="edu2.role">Bachelor Informatique</h3>
+                  <span class="timeline-org" data-i18n="edu2.org"
+                    >Ynov Aix Campus</span
+                  >
+                  <p data-i18n="edu2.desc">…</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- ======= Projects ======= -->
-    <section id="projects" class="section">
-      <div class="container">
-        <div class="section-head reveal">
-          <div class="eyebrow" data-i18n="projects.eyebrow">projects</div>
-          <h2 data-i18n="projects.title">Projets</h2>
-          <p data-i18n="projects.subtitle">Une sélection de projets personnels et scolaires.</p>
-        </div>
-
-        <div class="projects-grid">
-          <a class="project-card reveal" href="project-astulpho.html">
-            <div class="project-thumb"><img src="assets/img/project-astu.png" alt="Astulpho"></div>
-            <div class="project-body">
-              <span class="project-tag" data-i18n="project1.tag">Web · Forum</span>
-              <h3 data-i18n="project1.title">Astulpho</h3>
-              <p data-i18n="project1.desc">…</p>
-              <span class="project-link" data-i18n="project.link">Voir le détail</span>
-            </div>
-          </a>
-          <a class="project-card reveal" href="project-gameshelf.html">
-            <div class="project-thumb"><img src="assets/img/project-16.png" alt="GameShelf"></div>
-            <div class="project-body">
-              <span class="project-tag" data-i18n="project2.tag">UX Design</span>
-              <h3 data-i18n="project2.title">GameShelf</h3>
-              <p data-i18n="project2.desc">…</p>
-              <span class="project-link" data-i18n="project.link">Voir le détail</span>
-            </div>
-          </a>
-          <a class="project-card reveal" href="project-challenge48.html">
-            <div class="project-thumb"><img src="assets/img/project-challenge48.png" alt="Challenge 48h"></div>
-            <div class="project-body">
-              <span class="project-tag" data-i18n="project3.tag">UX Design · Hackathon</span>
-              <h3 data-i18n="project3.title">Challenge 48h</h3>
-              <p data-i18n="project3.desc">…</p>
-              <span class="project-link" data-i18n="project.link">Voir le détail</span>
-            </div>
-          </a>
-          <a class="project-card reveal" href="project-tang-arlee.html">
-            <div class="project-thumb"><img src="assets/img/project-tang.png" alt="Tang & Arlee"></div>
-            <div class="project-body">
-              <span class="project-tag" data-i18n="project4.tag">Jeu vidéo</span>
-              <h3 data-i18n="project4.title">Tang &amp; Arlee</h3>
-              <p data-i18n="project4.desc">…</p>
-              <span class="project-link" data-i18n="project.link">Voir le détail</span>
-            </div>
-          </a>
-        </div>
-
-        <p class="projects-note" data-i18n="projects.note">// Section en cours de mise à jour.</p>
-      </div>
-    </section>
-
-    <!-- ======= Contact ======= -->
-    <section id="contact" class="section">
-      <div class="container">
-        <div class="contact-wrap reveal">
-          <div>
-            <div class="eyebrow" data-i18n="contact.eyebrow">contact</div>
-            <h2 data-i18n="contact.title">Discutons de votre projet</h2>
-            <p data-i18n="contact.text">…</p>
+      <!-- ======= Skills ======= -->
+      <section id="skills" class="section">
+        <div class="container">
+          <div class="section-head reveal">
+            <div class="eyebrow" data-i18n="skills.eyebrow">skills</div>
+            <h2 data-i18n="skills.title">Compétences</h2>
+            <p data-i18n="skills.subtitle">
+              Le résultat de plusieurs années de pratique.
+            </p>
           </div>
-          <div class="contact-links">
-            <a href="mailto:alexandre.bruno01@orange.fr">
-              <span class="ico">@</span>
-              <span>
-                <small data-i18n="contact.email.label">Email</small>
-                alexandre.bruno01@orange.fr
-              </span>
+
+          <div class="skills-grid">
+            <div class="skill-card reveal">
+              <h3 data-i18n="skills.languages">Langages</h3>
+              <div class="chip-row">
+                <span class="chip">JavaScript</span>
+                <span class="chip">TypeScript</span>
+                <span class="chip">Python</span>
+                <span class="chip">Java</span>
+                <span class="chip">C#</span>
+                <span class="chip">PHP</span>
+                <span class="chip">Kotlin</span>
+                <span class="chip">C++</span>
+                <span class="chip">Golang</span>
+              </div>
+            </div>
+            <div class="skill-card reveal">
+              <h3 data-i18n="skills.frameworks">Frameworks &amp; outils</h3>
+              <div class="chip-row">
+                <span class="chip">Angular</span>
+                <span class="chip">Symfony</span>
+                <span class="chip">Android Studio</span>
+                <span class="chip">Git</span>
+                <span class="chip">HTML / CSS</span>
+              </div>
+            </div>
+            <div class="skill-card reveal">
+              <h3 data-i18n="skills.data">Données &amp; systèmes</h3>
+              <div class="chip-row">
+                <span class="chip">MySQL</span>
+                <span class="chip">Administration BDD</span>
+                <span class="chip">API tierces</span>
+              </div>
+            </div>
+            <div class="skill-card reveal">
+              <h3 data-i18n="skills.other">Autres</h3>
+              <div class="chip-row">
+                <span class="chip">DevOps</span>
+                <span class="chip">Gestion de projet</span>
+                <span class="chip">Anglais</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="callout reveal">
+            <div>
+              <span class="tag" data-i18n="skills.callout.tag"
+                >En pratique</span
+              >
+              <p data-i18n="skills.callout.text">…</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======= Projects ======= -->
+      <section id="projects" class="section">
+        <div class="container">
+          <div class="section-head reveal">
+            <div class="eyebrow" data-i18n="projects.eyebrow">projects</div>
+            <h2 data-i18n="projects.title">Projets</h2>
+            <p data-i18n="projects.subtitle">
+              Une sélection de projets personnels et scolaires.
+            </p>
+          </div>
+
+          <div class="projects-grid">
+            <a class="project-card reveal" href="project-astulpho.html">
+              <div class="project-thumb">
+                <img src="assets/img/project-astu.png" alt="Astulpho" />
+              </div>
+              <div class="project-body">
+                <span class="project-tag" data-i18n="project1.tag"
+                  >Web · Forum</span
+                >
+                <h3 data-i18n="project1.title">Astulpho</h3>
+                <p data-i18n="project1.desc">…</p>
+                <span class="project-link" data-i18n="project.link"
+                  >Voir le détail</span
+                >
+              </div>
             </a>
-            <a href="tel:+33785598072">
-              <span class="ico">☎</span>
-              <span>
-                <small data-i18n="contact.phone.label">Téléphone</small>
-                +33 7 85 59 80 72
-              </span>
+            <a class="project-card reveal" href="project-gameshelf.html">
+              <div class="project-thumb">
+                <img src="assets/img/project-16.png" alt="GameShelf" />
+              </div>
+              <div class="project-body">
+                <span class="project-tag" data-i18n="project2.tag"
+                  >UX Design</span
+                >
+                <h3 data-i18n="project2.title">GameShelf</h3>
+                <p data-i18n="project2.desc">…</p>
+                <span class="project-link" data-i18n="project.link"
+                  >Voir le détail</span
+                >
+              </div>
             </a>
-            <a href="https://www.linkedin.com/in/alexandre-bruno-8553711b6/" target="_blank" rel="noopener">
-              <span class="ico">in</span>
-              <span>
-                <small data-i18n="contact.linkedin.label">LinkedIn</small>
-                /alexandre-bruno
-              </span>
+            <a class="project-card reveal" href="project-challenge48.html">
+              <div class="project-thumb">
+                <img
+                  src="assets/img/project-challenge48.png"
+                  alt="Challenge 48h"
+                />
+              </div>
+              <div class="project-body">
+                <span class="project-tag" data-i18n="project3.tag"
+                  >UX Design · Hackathon</span
+                >
+                <h3 data-i18n="project3.title">Challenge 48h</h3>
+                <p data-i18n="project3.desc">…</p>
+                <span class="project-link" data-i18n="project.link"
+                  >Voir le détail</span
+                >
+              </div>
             </a>
-            <a href="https://www.instagram.com/alecs.bruno/?hl=fr" target="_blank" rel="noopener">
-              <span class="ico">IG</span>
-              <span>
-                <small data-i18n="contact.instagram.label">Instagram</small>
-                @alecs.bruno
-              </span>
+            <a class="project-card reveal" href="project-tang-arlee.html">
+              <div class="project-thumb">
+                <img src="assets/img/project-tang.png" alt="Tang & Arlee" />
+              </div>
+              <div class="project-body">
+                <span class="project-tag" data-i18n="project4.tag"
+                  >Jeu vidéo</span
+                >
+                <h3 data-i18n="project4.title">Tang &amp; Arlee</h3>
+                <p data-i18n="project4.desc">…</p>
+                <span class="project-link" data-i18n="project.link"
+                  >Voir le détail</span
+                >
+              </div>
             </a>
           </div>
+
+          <p class="projects-note" data-i18n="projects.note">
+            // Section en cours de mise à jour.
+          </p>
         </div>
+      </section>
+
+      <!-- ======= Contact ======= -->
+      <section id="contact" class="section">
+        <div class="container">
+          <div class="contact-wrap reveal">
+            <div>
+              <div class="eyebrow" data-i18n="contact.eyebrow">contact</div>
+              <h2 data-i18n="contact.title">Discutons de votre projet</h2>
+              <p data-i18n="contact.text">…</p>
+            </div>
+            <div class="contact-links">
+              <a href="mailto:alexandre.bruno01@orange.fr">
+                <span class="ico">@</span>
+                <span>
+                  <small data-i18n="contact.email.label">Email</small>
+                  alexandre.bruno01@orange.fr
+                </span>
+              </a>
+              <a href="tel:+33785598072">
+                <span class="ico">☎</span>
+                <span>
+                  <small data-i18n="contact.phone.label">Téléphone</small>
+                  +33 7 85 59 80 72
+                </span>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/alexandre-bruno-8553711b6/"
+                target="_blank"
+                rel="noopener"
+              >
+                <span class="ico">in</span>
+                <span>
+                  <small data-i18n="contact.linkedin.label">LinkedIn</small>
+                  /alexandre-bruno
+                </span>
+              </a>
+              <a
+                href="https://www.instagram.com/alecs.bruno/?hl=fr"
+                target="_blank"
+                rel="noopener"
+              >
+                <span class="ico">IG</span>
+                <span>
+                  <small data-i18n="contact.instagram.label">Instagram</small>
+                  @alecs.bruno
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <span data-year></span> Alexandre Bruno —
+        <span data-i18n="footer.rights">Tous droits réservés.</span>
       </div>
-    </section>
+    </footer>
 
-  </main>
+    <a href="#hero" class="back-to-top" aria-label="Retour en haut">↑</a>
 
-  <footer>
-    <div class="container">
-      <span data-year></span> Alexandre Bruno — <span data-i18n="footer.rights">Tous droits réservés.</span>
-    </div>
-  </footer>
-
-  <a href="#hero" class="back-to-top" aria-label="Retour en haut">↑</a>
-
-  <script src="assets/js/i18n.js"></script>
-  <script src="assets/js/main.js"></script>
-</body>
+    <script src="assets/js/i18n.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
