@@ -192,6 +192,40 @@
   }
 
   /* =========================================================
+     Gallery lightbox (project pages)
+     ========================================================= */
+  var galleryItems = document.querySelectorAll(".gallery-item");
+  if (galleryItems.length) {
+    var overlay = document.createElement("div");
+    overlay.className = "lightbox-overlay";
+    overlay.innerHTML = '<button type="button" class="lightbox-close" aria-label="Fermer">&times;</button><img alt="">';
+    document.body.appendChild(overlay);
+    var overlayImg = overlay.querySelector("img");
+
+    function openLightbox(src, alt) {
+      overlayImg.setAttribute("src", src);
+      overlayImg.setAttribute("alt", alt || "");
+      overlay.classList.add("open");
+    }
+    function closeLightbox() {
+      overlay.classList.remove("open");
+    }
+
+    galleryItems.forEach(function (item) {
+      item.addEventListener("click", function () {
+        var img = item.querySelector("img");
+        if (img) openLightbox(img.getAttribute("src"), img.getAttribute("alt"));
+      });
+    });
+    overlay.addEventListener("click", function (e) {
+      if (e.target === overlay || e.target.closest(".lightbox-close")) closeLightbox();
+    });
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape") closeLightbox();
+    });
+  }
+
+  /* =========================================================
      Footer year
      ========================================================= */
   var yearEl = document.querySelector("[data-year]");
