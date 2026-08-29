@@ -16,7 +16,7 @@ const TRANSLATIONS = {
     "nav.contact": "Contact",
 
     "hero.kicker": "portfolio.dev — session active",
-    "hero.title.pre": "Salut, je suis ",
+    "hero.title.pre": "Bonjour, je suis ",
     "hero.title.name": "Alexandre",
     "hero.lead":
       "Développeur fullstack de 25 ans, diplômé d'un Master Ingénieur Web à Ynov Campus. J'aime transformer un besoin flou en produit qui tourne vraiment.",
