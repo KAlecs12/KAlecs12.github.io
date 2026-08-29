@@ -6,7 +6,7 @@ const TRANSLATIONS = {
   fr: {
     "meta.title": "Alexandre Bruno — Développeur Fullstack",
     "meta.description":
-      "Portfolio d'Alexandre Bruno, développeur fullstack et étudiant ingénieur web à Aix-en-Provence.",
+      "Portfolio d'Alexandre Bruno, développeur fullstack et diplômé ingénieur web à Aix-en-Provence.",
 
     "nav.about": "À propos",
     "nav.experience": "Expérience",
@@ -22,7 +22,7 @@ const TRANSLATIONS = {
       "Développeur fullstack de 25 ans, diplômé d'un Master Ingénieur Web à Ynov Campus. J'aime transformer un besoin flou en produit qui tourne vraiment.",
     "hero.meta.age": "25 ans",
     "hero.meta.location": "Aix-en-Provence, France",
-    "hero.meta.status": "Ouvert aux opportunités",
+    "hero.meta.status": "Disponible",
     "hero.cta.projects": "Voir mes projets",
     "hero.cta.contact": "Me contacter",
     "hero.term.title": "~/alexandre-bruno — zsh",
@@ -31,7 +31,7 @@ const TRANSLATIONS = {
     "hero.term.role1": "Software Engineer",
     "hero.term.role2": "Développeur Fullstack",
     "hero.term.role3": "Chef de projet",
-    "hero.term.role4": "Étudiant Ingénieur Web",
+    "hero.term.role4": "Diplômé Ingénieur Web",
 
     "about.eyebrow": "about",
     "about.title": "À propos",
