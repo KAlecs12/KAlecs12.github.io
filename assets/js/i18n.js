@@ -116,6 +116,14 @@ const TRANSLATIONS = {
     "project4.title": "Tang & Arlee",
     "project4.desc":
       "Jeu vidéo 3D développé sous Unity au sein d'une équipe de 8 personnes : personnage, caméra, mouvements, animations et quêtes.",
+    "project5.tag": "Site vitrine · Client",
+    "project5.title": "L'Artisan du Bassin",
+    "project5.desc":
+      "Site d'un pisciniste à Allauch, du code au référencement local : Astro, Cloudflare et formulaire de devis.",
+    "project6.tag": "Jeu web · Fullstack",
+    "project6.title": "PokéGéo",
+    "project6.desc":
+      "GeoGuessr sur les cartes Pokémon : défi du jour, solo et multijoueur en temps réel, plus de 1 300 lieux.",
     "project.link": "Voir le détail",
     "projects.note":
       "// De nouveaux projets arrivent bientôt (Gameshelf v2, missions Capgemini, projets Ynov).",
@@ -213,6 +221,99 @@ const TRANSLATIONS = {
     "proj.challenge48.li5":
       "Prévoir un budget matériel en minimisant les coûts",
     "proj.challenge48.h3": "Galerie",
+
+    "proj.artisan.tag": "Site vitrine · SEO local",
+    "proj.artisan.title": "L'Artisan du Bassin",
+    "proj.artisan.lead":
+      "Le site d'un artisan pisciniste des Bouches-du-Rhône, conçu pour être trouvé sur Google et transformer les visites en demandes de devis.",
+    "proj.artisan.meta.category": "Astro / Cloudflare / SEO local",
+    "proj.artisan.meta.date": "Juillet – Octobre 2026",
+    "proj.artisan.meta.team": "Projet client, en solo",
+    "proj.artisan.cta": "Voir le site en ligne",
+    "proj.artisan.h1": "Le projet",
+    "proj.artisan.p1":
+      "L'Artisan du Bassin est une entreprise de piscine installée à Allauch, qui intervient à Marseille, Aix-en-Provence et dans les communes voisines : entretien, traitement de l'eau, hivernage, dépannage, recherche de fuite et rénovation. Le besoin : un site rapide et crédible, qui remonte sur les recherches locales (« pisciniste Marseille », « entretien piscine Aix ») et donne envie d'appeler ou de demander un devis.",
+    "proj.artisan.h2": "Comment on s'y est pris",
+    "proj.artisan.p2":
+      "Plutôt qu'un site figé, j'ai d'abord construit une base réutilisable pour les sites vitrines, puis je l'ai adaptée à l'entreprise, en avançant par itérations avec le client à partir de ses photos de chantier et de ses relectures.",
+    "proj.artisan.li1":
+      "Un starter Astro maison : les informations de l'entreprise (coordonnées, adresse officielle, GPS, SIRET, navigation) sont centralisées dans un fichier de configuration, avec des sections prêtes à l'emploi (accueil, services, méthode, FAQ, avant / après, appel à l'action).",
+    "proj.artisan.li2":
+      "Le contenu traité comme de la donnée : 8 services et 9 communes décrits en TypeScript, d'où sont générées les pages services et villes, chacune avec un texte unique, sa FAQ et ses liens internes.",
+    "proj.artisan.li3":
+      "Un site statique servi par le CDN de Cloudflare : seule la route du formulaire de contact s'exécute côté serveur.",
+    "proj.artisan.li4":
+      "L'IA générative (Claude Code) comme binôme de développement pour la refonte SEO : audit, réécriture des contenus et vérifications, chaque changement étant relu avant la mise en ligne.",
+    "proj.artisan.h3": "Ce qui a été mis en place",
+    "proj.artisan.li5":
+      "Formulaire de devis : validation, champ piège anti-robots et vérification Cloudflare Turnstile côté serveur, puis envoi via Resend d'un email à l'artisan (réponse directe au client) et d'un accusé de réception au client.",
+    "proj.artisan.li6":
+      "SEO technique : une seule URL par page, balises canoniques et sitemap cohérents, robots.txt, un titre H1 par page et fil d'Ariane.",
+    "proj.artisan.li7":
+      "Données structurées Schema.org : fiche d'entreprise locale (adresse, coordonnées GPS, horaires, communes desservies, catalogue des prestations) et FAQ, pour des résultats enrichis dans Google.",
+    "proj.artisan.li8":
+      "Performance : images optimisées à la compilation, logo passé de 3,9 Mo à quelques Ko, polices auto-hébergées.",
+    "proj.artisan.li9":
+      "Mobile d'abord : bouton d'appel dès l'accueil, services en tuiles, devis et téléphone dans le menu, comparateur avant / après tactile.",
+    "proj.artisan.li10":
+      "Page réalisations avec filtres par type d'intervention (entretien, installation, pompe à chaleur).",
+    "proj.artisan.h4": "Mise en ligne et référencement",
+    "proj.artisan.p3":
+      "Le site est déployé sur Cloudflare depuis GitHub, avec son nom de domaine et des clés d'API gardées hors du dépôt. Côté Google, le sitemap a été soumis dans la Search Console et les pages prioritaires indexées, et la fiche Google Business a été alignée sur le site (même nom, adresse et téléphone) pour renforcer le référencement local. Résultat : 25 pages indexables, dont 8 pages services et 9 pages villes.",
+    "proj.artisan.h5": "Technologies",
+    "proj.artisan.h6": "Galerie",
+
+    "proj.pokegeo.tag": "Jeu web · Fullstack",
+    "proj.pokegeo.title": "PokéGéo",
+    "proj.pokegeo.lead":
+      "Le principe de GeoGuessr appliqué aux cartes des jeux Pokémon : un bout de carte, un viseur, et il faut retrouver l'endroit exact.",
+    "proj.pokegeo.meta.category": "Next.js / PostgreSQL / Temps réel",
+    "proj.pokegeo.meta.date": "Mars – Octobre 2026",
+    "proj.pokegeo.meta.team": "Projet personnel",
+    "proj.pokegeo.cta": "Jouer en ligne",
+    "proj.pokegeo.h1": "Le projet",
+    "proj.pokegeo.p1":
+      "Un morceau de carte d'un jeu Pokémon s'affiche (HeartGold / SoulSilver, Émeraude, Diamant / Perle / Platine), le lieu à trouver au centre du viseur. Il faut deviner la région, puis la zone, puis placer son repère au bon endroit, pendant que la vue se dézoome au fil du temps. Quatre régions sont jouables, de Kanto à Sinnoh, pour plus de 1 300 lieux.",
+    "proj.pokegeo.li1":
+      "<strong>Défi du jour</strong> : 5 lieux, les mêmes pour tout le monde, un essai par jour, classement et partage du résultat façon Wordle.",
+    "proj.pokegeo.li2":
+      "<strong>Solo</strong> : 4 difficultés, de 3 à 10 manches, jouable sans compte.",
+    "proj.pokegeo.li3":
+      "<strong>Multijoueur</strong> : salons de 2 à 8 joueurs avec invitation par lien ; chaque réponse divise par deux le temps des autres.",
+    "proj.pokegeo.li4":
+      "<strong>Progression</strong> : 8 badges d'arène, séries de jours et classements.",
+    "proj.pokegeo.h2": "Comment on s'y est pris",
+    "proj.pokegeo.li5":
+      "Un premier prototype au printemps (Next.js, Prisma, comptes utilisateurs), puis une refonte complète à l'automne pour rendre le jeu fiable, rapide et jouable sans inscription.",
+    "proj.pokegeo.li6":
+      "Le serveur fait autorité : chrono, score et fin de manche sont calculés côté serveur, et le navigateur ne reçoit jamais la réponse (ni le nom de la carte, ni la position) avant la fin de la manche.",
+    "proj.pokegeo.li7":
+      "Des lieux générés automatiquement : un script analyse chaque carte et repère les couleurs rares (bâtiments, objets reconnaissables) pour placer les lieux et estimer leur difficulté, puis un éditeur interne permet de les retoucher et de dessiner les zones cliquables.",
+    "proj.pokegeo.li8":
+      "Une ouverture région par région (Kanto, Johto, puis Hoenn et Sinnoh) : cartes sourcées puis nettoyées des annotations qui trahissaient la réponse, zones placées d'après les coordonnées des projets de décompilation des jeux.",
+    "proj.pokegeo.li9":
+      "L'IA générative (Claude Code) comme binôme de développement : je fixe la direction et découpe le travail, l'IA accélère l'implémentation, et chaque changement est relu et testé avant d'être mis en ligne.",
+    "proj.pokegeo.h3": "Ce qui a été mis en place",
+    "proj.pokegeo.li10":
+      "Indices générés côté serveur avec sharp : découpe de la carte autour du lieu et dézoom par paliers, débloqués par le chrono du serveur.",
+    "proj.pokegeo.li11":
+      "Un barème sur 5 000 points par manche : région, zone, précision et rapidité.",
+    "proj.pokegeo.li12":
+      "Multijoueur en temps réel avec Pusher (canaux privés autorisés par le serveur), repli automatique en polling, fin de manche idempotente et transfert d'hôte si quelqu'un quitte.",
+    "proj.pokegeo.li13":
+      "Comptes avec NextAuth : email et mot de passe, Discord ou Google, mode invité, confirmation d'email, mot de passe oublié et suppression du compte.",
+    "proj.pokegeo.li14":
+      "Sécurité : limitation de débit stockée en base, en-têtes CSP / Permissions-Policy / COOP, validation des entrées avec Zod, jetons de lien stockés sous forme d'empreinte.",
+    "proj.pokegeo.li15":
+      "Protection de la base de lieux contre l'aspiration : plafond quotidien de manches, empreinte cachée dans les coordonnées et filigrane invisible dans les images d'indice.",
+    "proj.pokegeo.li16":
+      "Performance : 208 cartes recompressées sans perte visible (de 65 à 36 Mo), accueil rendu côté serveur, application installable sur mobile, image d'aperçu générée pour chaque partage.",
+    "proj.pokegeo.li17":
+      "Une identité pixel art : cadres crantés, polices bitmap, sons 8-bit et menu pilotable au clavier.",
+    "proj.pokegeo.h4": "Technologies",
+    "proj.pokegeo.disclaimer":
+      "// Projet de fan gratuit et non commercial, non affilié à Nintendo, Game Freak, Creatures ou The Pokémon Company.",
+    "proj.pokegeo.h5": "Galerie",
 
     "contact.eyebrow": "contact",
     "contact.title": "Discutons de votre projet",
@@ -340,6 +441,14 @@ const TRANSLATIONS = {
     "project4.title": "Tang & Arlee",
     "project4.desc":
       "3D video game built in Unity with a team of 8: character, camera, movement, animations and quests.",
+    "project5.tag": "Showcase site · Client",
+    "project5.title": "L'Artisan du Bassin",
+    "project5.desc":
+      "Website for a pool specialist near Marseille, from code to local SEO: Astro, Cloudflare and a quote request form.",
+    "project6.tag": "Web game · Fullstack",
+    "project6.title": "PokéGéo",
+    "project6.desc":
+      "GeoGuessr on Pokémon maps: daily challenge, solo and real-time multiplayer, over 1,300 locations.",
     "project.link": "View details",
     "projects.note":
       "// New projects coming soon (Gameshelf v2, Capgemini work, Ynov projects).",
@@ -429,6 +538,99 @@ const TRANSLATIONS = {
       "Document the solution so it can be reused and redeployed",
     "proj.challenge48.li5": "Plan hardware budget while minimizing costs",
     "proj.challenge48.h3": "Gallery",
+
+    "proj.artisan.tag": "Showcase site · Local SEO",
+    "proj.artisan.title": "L'Artisan du Bassin",
+    "proj.artisan.lead":
+      "The website of a pool specialist in southern France, built to be found on Google and turn visits into quote requests.",
+    "proj.artisan.meta.category": "Astro / Cloudflare / Local SEO",
+    "proj.artisan.meta.date": "July – October 2026",
+    "proj.artisan.meta.team": "Client project, solo",
+    "proj.artisan.cta": "Visit the live site",
+    "proj.artisan.h1": "The project",
+    "proj.artisan.p1":
+      "L'Artisan du Bassin is a pool company based in Allauch, working across Marseille, Aix-en-Provence and the surrounding towns: maintenance, water treatment, winterizing, repairs, leak detection and renovation. The need: a fast, credible website that ranks on local searches (\"pool specialist Marseille\", \"pool maintenance Aix\") and makes visitors want to call or ask for a quote.",
+    "proj.artisan.h2": "How we went about it",
+    "proj.artisan.p2":
+      "Rather than a one-off site, I first built a reusable base for showcase websites, then adapted it to the business, iterating with the client on their job-site photos and proofreading.",
+    "proj.artisan.li1":
+      "A custom Astro starter: all business details (contact info, official address, GPS, company ID, navigation) live in a single config file, alongside ready-made sections (hero, services, process, FAQ, before / after, call to action).",
+    "proj.artisan.li2":
+      "Content treated as data: 8 services and 9 towns described in TypeScript, from which the service and town pages are generated, each with unique copy, its own FAQ and internal links.",
+    "proj.artisan.li3":
+      "A static site served from Cloudflare's CDN: only the contact form route runs on the server.",
+    "proj.artisan.li4":
+      "Generative AI (Claude Code) as a pair programmer for the SEO overhaul: audit, content rewrites and checks, with every change reviewed before going live.",
+    "proj.artisan.h3": "What was built",
+    "proj.artisan.li5":
+      "Quote form: validation, an anti-bot honeypot field and server-side Cloudflare Turnstile verification, then Resend sends one email to the business (with direct reply to the client) and a confirmation to the client.",
+    "proj.artisan.li6":
+      "Technical SEO: one URL per page, consistent canonicals and sitemap, robots.txt, one H1 per page and breadcrumbs.",
+    "proj.artisan.li7":
+      "Schema.org structured data: local business listing (address, GPS coordinates, opening hours, towns served, service catalog) and FAQ, for rich results on Google.",
+    "proj.artisan.li8":
+      "Performance: images optimized at build time, logo down from 3.9 MB to a few KB, self-hosted fonts.",
+    "proj.artisan.li9":
+      "Mobile first: call button right on the home page, services as tiles, quote and phone in the menu, touch-friendly before / after slider.",
+    "proj.artisan.li10":
+      "Portfolio page with filters by type of work (maintenance, installation, heat pump).",
+    "proj.artisan.h4": "Launch and search ranking",
+    "proj.artisan.p3":
+      "The site is deployed to Cloudflare from GitHub, with its own domain and API keys kept out of the repository. On the Google side, the sitemap was submitted in Search Console and priority pages indexed, and the Google Business profile was aligned with the site (same name, address and phone) to strengthen local SEO. Result: 25 indexable pages, including 8 service pages and 9 town pages.",
+    "proj.artisan.h5": "Tech stack",
+    "proj.artisan.h6": "Gallery",
+
+    "proj.pokegeo.tag": "Web game · Fullstack",
+    "proj.pokegeo.title": "PokéGéo",
+    "proj.pokegeo.lead":
+      "GeoGuessr's concept applied to Pokémon game maps: a piece of map, a crosshair, and you have to find the exact spot.",
+    "proj.pokegeo.meta.category": "Next.js / PostgreSQL / Real-time",
+    "proj.pokegeo.meta.date": "March – October 2026",
+    "proj.pokegeo.meta.team": "Personal project",
+    "proj.pokegeo.cta": "Play online",
+    "proj.pokegeo.h1": "The project",
+    "proj.pokegeo.p1":
+      "A piece of map from a Pokémon game appears (HeartGold / SoulSilver, Emerald, Diamond / Pearl / Platinum), with the spot to find in the crosshair. You guess the region, then the area, then drop your pin in the right place, while the view zooms out over time. Four regions are playable, from Kanto to Sinnoh, for over 1,300 locations.",
+    "proj.pokegeo.li1":
+      "<strong>Daily challenge</strong>: 5 locations, the same for everyone, one try per day, leaderboard and Wordle-style result sharing.",
+    "proj.pokegeo.li2":
+      "<strong>Solo</strong>: 4 difficulty levels, 3 to 10 rounds, playable without an account.",
+    "proj.pokegeo.li3":
+      "<strong>Multiplayer</strong>: lobbies of 2 to 8 players with invite links; every answer halves everyone else's time.",
+    "proj.pokegeo.li4":
+      "<strong>Progression</strong>: 8 gym badges, daily streaks and leaderboards.",
+    "proj.pokegeo.h2": "How we went about it",
+    "proj.pokegeo.li5":
+      "A first prototype in the spring (Next.js, Prisma, user accounts), then a full overhaul in the fall to make the game reliable, fast and playable without signing up.",
+    "proj.pokegeo.li6":
+      "The server is authoritative: timer, score and end of round are computed server-side, and the browser never receives the answer (neither the map name nor the position) before the round is over.",
+    "proj.pokegeo.li7":
+      "Auto-generated locations: a script analyses each map and spots rare colors (buildings, recognizable objects) to place locations and estimate their difficulty, then an internal editor is used to fine-tune them and draw the clickable areas.",
+    "proj.pokegeo.li8":
+      "Region-by-region rollout (Kanto, Johto, then Hoenn and Sinnoh): maps sourced and cleaned of annotations that gave the answer away, areas placed using coordinates from the games' decompilation projects.",
+    "proj.pokegeo.li9":
+      "Generative AI (Claude Code) as a pair programmer: I set the direction and break down the work, the AI speeds up implementation, and every change is reviewed and tested before going live.",
+    "proj.pokegeo.h3": "What was built",
+    "proj.pokegeo.li10":
+      "Server-generated clues with sharp: the map is cropped around the location, with zoom-out steps unlocked by the server's timer.",
+    "proj.pokegeo.li11":
+      "Scoring out of 5,000 points per round: region, area, precision and speed.",
+    "proj.pokegeo.li12":
+      "Real-time multiplayer with Pusher (private channels authorized by the server), automatic polling fallback, idempotent round endings and host handover when someone leaves.",
+    "proj.pokegeo.li13":
+      "Accounts with NextAuth: email and password, Discord or Google, guest mode, email confirmation, password reset and account deletion.",
+    "proj.pokegeo.li14":
+      "Security: rate limiting stored in the database, CSP / Permissions-Policy / COOP headers, input validation with Zod, link tokens stored as hashes.",
+    "proj.pokegeo.li15":
+      "Protecting the location database from scraping: a daily round cap, a hidden fingerprint in the coordinates and an invisible watermark in clue images.",
+    "proj.pokegeo.li16":
+      "Performance: 208 maps recompressed with no visible loss (65 MB down to 36 MB), server-rendered home page, installable mobile app, preview image generated for every share.",
+    "proj.pokegeo.li17":
+      "A pixel-art identity: notched frames, bitmap fonts, 8-bit sounds and a keyboard-driven menu.",
+    "proj.pokegeo.h4": "Tech stack",
+    "proj.pokegeo.disclaimer":
+      "// Free, non-commercial fan project, not affiliated with Nintendo, Game Freak, Creatures or The Pokémon Company.",
+    "proj.pokegeo.h5": "Gallery",
 
     "contact.eyebrow": "contact",
     "contact.title": "Let's talk about your project",

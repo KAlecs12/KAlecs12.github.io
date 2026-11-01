@@ -618,6 +618,7 @@ footer{
   gap:8px;
 }
 .meta-pill .k{ color:var(--accent-2); }
+.project-actions{ display:flex; flex-wrap:wrap; gap:12px; margin-top:28px; }
 
 .project-body-section{ padding:80px 0; border-bottom:1px solid var(--border); }
 .project-body-section:last-of-type{ border-bottom:none; }
@@ -638,6 +639,13 @@ footer{
   position:absolute; left:4px; top:-1px;
   color:var(--accent);
   font-family:var(--font-mono);
+}
+.project-content .chip-row{ margin-bottom:1.2em; }
+.project-content .project-disclaimer{
+  font-family:var(--font-mono);
+  font-size:0.78rem;
+  color:var(--text-faint);
+  margin-top:1.6em;
 }
 
 .gallery{
