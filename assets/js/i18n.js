@@ -100,10 +100,6 @@ const TRANSLATIONS = {
     "projects.eyebrow": "projects",
     "projects.title": "Projets",
     "projects.subtitle": "Une sélection de projets personnels et scolaires.",
-    "project1.tag": "Web · Forum",
-    "project1.title": "Astulpho",
-    "project1.desc":
-      "Forum communautaire développé en binôme, avec un serveur codé en Golang de A à Z.",
     "project2.tag": "UX Design",
     "project2.title": "GameShelf",
     "project2.desc":
@@ -131,24 +127,6 @@ const TRANSLATIONS = {
     "projectnav.back": "Retour au portfolio",
     "projectnav.prev": "Projet précédent",
     "projectnav.next": "Projet suivant",
-
-    "proj.astulpho.tag": "Web · Forum",
-    "proj.astulpho.title": "Astulpho",
-    "proj.astulpho.lead":
-      "Un forum communautaire développé de zéro, moteur inclus.",
-    "proj.astulpho.meta.category": "Web design / Forum / Base de données",
-    "proj.astulpho.meta.date": "Juin 2021",
-    "proj.astulpho.meta.team": "Binôme",
-    "proj.astulpho.h1": "Le projet",
-    "proj.astulpho.p1":
-      "Projet réalisé en binôme sur la durée d'un mois, avec pour objectif de construire un forum pleinement fonctionnel. Le serveur a été codé en Golang, de la gestion des routes à la logique métier.",
-    "proj.astulpho.h2": "Fonctionnalités",
-    "proj.astulpho.li1":
-      "Système d'inscription et de connexion des utilisateurs",
-    "proj.astulpho.li2": "Modération des contenus publiés",
-    "proj.astulpho.li3": "Création de posts et interface de réponse",
-    "proj.astulpho.li4": "Système de like / dislike et de partage",
-    "proj.astulpho.h3": "Galerie",
 
     "proj.tang.tag": "Jeu vidéo · Unity 3D",
     "proj.tang.title": "Tang & Arlee",
@@ -425,10 +403,6 @@ const TRANSLATIONS = {
     "projects.eyebrow": "projects",
     "projects.title": "Projects",
     "projects.subtitle": "A selection of personal and school projects.",
-    "project1.tag": "Web · Forum",
-    "project1.title": "Astulpho",
-    "project1.desc":
-      "A community forum built with a partner, with a server written in Golang from scratch.",
     "project2.tag": "UX Design",
     "project2.title": "GameShelf",
     "project2.desc":
@@ -456,23 +430,6 @@ const TRANSLATIONS = {
     "projectnav.back": "Back to portfolio",
     "projectnav.prev": "Previous project",
     "projectnav.next": "Next project",
-
-    "proj.astulpho.tag": "Web · Forum",
-    "proj.astulpho.title": "Astulpho",
-    "proj.astulpho.lead":
-      "A community forum built from scratch, engine included.",
-    "proj.astulpho.meta.category": "Web design / Forum / Database",
-    "proj.astulpho.meta.date": "June 2021",
-    "proj.astulpho.meta.team": "Pair project",
-    "proj.astulpho.h1": "The project",
-    "proj.astulpho.p1":
-      "Built with a partner over one month, with the goal of shipping a fully functional forum. The server was written in Golang, from routing to business logic.",
-    "proj.astulpho.h2": "Features",
-    "proj.astulpho.li1": "User sign-up and login system",
-    "proj.astulpho.li2": "Moderation of published content",
-    "proj.astulpho.li3": "Post creation and reply interface",
-    "proj.astulpho.li4": "Like / dislike and sharing system",
-    "proj.astulpho.h3": "Gallery",
 
     "proj.tang.tag": "Video game · Unity 3D",
     "proj.tang.title": "Tang & Arlee",
